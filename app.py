@@ -8,6 +8,7 @@ CORS(app)
 # Load model once when the app starts
 model = joblib.load("salary_predict_model.ml")
 
+api_url = "https://amelmore-api-awdrhzbdc5hcbkhm.eastus-01.azurewebsites.net/"
 
 @app.route("/")
 def home():
